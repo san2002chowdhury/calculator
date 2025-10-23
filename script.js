@@ -6,18 +6,17 @@ const deleteOne = document.querySelector('.delete-one');
 const deleteAll = document.querySelector('.delete-all');
 const evaluation = document.querySelector("#valuation");
 
-
 let operand1 = 0;
 let operand2 = 0;
 let result = 0;
 let expression = "";
-
 
 numbers.forEach(number => {
     number.addEventListener("click", () => {
         inputBox.value += number.value;
     })
 })
+
 operators.forEach(operator => {
     operator.addEventListener("click", () => {
         operand1 = Number(inputBox.value);
